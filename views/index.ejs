@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #main-container
+            {
+                position: relative;
+                background: linear-gradient(to bottom, #007f73, transparent);
+                height: 90vh;
+                width: 95vw;
+                text-align: center;
+            }
+            .flex-container
+            {
+                display: flex;
+                justify-content: center;
+            }
+            #main-container > img
+            {
+                position: relative;
+                margin-left: 5vw;
+                margin-top: 20vh;
+            }
+            .button
+            {
+                position: relative;
+                margin-top: 25%;
+                height: 4vh;
+                background-color: #198d82;
+                border-radius: 2em;
+                width: 25vw;
+                text-align: center;
+                padding: 1em;
+                box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+            }
+            .signup
+            {
+                position: relative;
+                margin-left: 5vw;
+            }
+            a 
+            {
+                text-decoration: none;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="main-container">
+            <img src="./assets/loginPic.png" height="200" width="200" style="border-radius: 50%;"> 
+            
+            <div class="flex-container">
+            <div class="login button"><a href="./login">LOGIN</a></div> 
+            <div class="signup button"><a href="./signup">SIGN-UP</a></div> 
+            </div>
+        </div>
+    </body>
+</html>

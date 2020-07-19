@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <style>
+            body
+            {
+                background: linear-gradient(to bottom, #007f73, transparent);
+                text-align: center;
+            }
+            .form-style
+            {
+                height: 100vh;
+                width: 90vw;
+                position: relative;
+            } 
+            .form-style > img
+            {
+                position: relative;
+                margin-left: 10vw;
+                margin-top: 20vh;
+                
+            }
+            input
+            {
+                font-size: 2em;
+                text-align: center;
+            }
+            input[type=text] 
+            {
+                height: 5vh;
+                width: 50vw;
+                border-radius: 2em;
+                margin-left: 10vw;
+                position: relative;
+                margin-top: 10vh;
+            }
+            input[type=password]
+            {
+                height: 5vh;
+                width: 50vw;
+                border-radius: 2em;
+                margin-left: 10vw;
+                position: relative;
+                margin-top: 5vh;
+            }
+            #submit-button
+            {
+                height: 5vh;
+                width: 25vw;
+                border-radius: 2em;
+                margin-left: 15vw;
+                position: relative;
+                margin-top: 5vh;
+                background-color: #007f73;
+                font-size: 2em;
+                color: white;
+                font-weight: bolder;
+                box-shadow: 0 0 10px 5px rgba(0,0,0,0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-style">
+            <img src="./assets/loginPic2.png" height="500" width="500" style="border-radius: 50%;">
+        <form action="./auth" method="post">
+            <input type="text" name="username" placeholder="Enter username" required>
+            <br/><input type="password" name="password" placeholder="Enter password" required>
+            <br/><input id="submit-button" type="submit" name="submit">
+        </form>
+        <br/><br/>
+        <h1 style="position: relative; margin-left: 3em; color: red; text-align: center;"><%=  message %></h1>
+    </div>
+    </body>
+    <script>
+    </script>
+</html>
