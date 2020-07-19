@@ -14,7 +14,7 @@ user_schema.methods.gen_hash=(password)=>{
 user_schema.methods.check_valid_password=(password)=>{
     return bcrypt.compareSync(password, this.password)
 }
-mongoose.connect('mongodb+srv://Suchandra:5,2,2exaBYTE@cluster0.hgqoy.mongodb.net/AnimalRescueApp?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://Username and password stuff goes here/AnimalRescueApp?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true})
 let User_Obj=mongoose.model('CollectionOne', user_schema)
 
 module.exports=User_Obj
